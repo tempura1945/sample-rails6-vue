@@ -1,0 +1,23 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  collation: C
+  ctype: C
+  template: template0
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  # url: <%= ENV['DATABASE_URL'] %>
+  url: postgres://sample-user:sample-dev-db@localhost:5432
+  database: sample-dev-db
+
+test:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
+  database: sample-test-db
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
+  database: sample-prd-db

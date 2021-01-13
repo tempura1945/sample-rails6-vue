@@ -1,0 +1,80 @@
+require:
+  - rubocop-rails
+
+AllCops:
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  ExtraDetails: true
+  Exclude:
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - '.git/**/*'
+    - 'db/schema.rb'
+    - 'config/initializers/devise.rb'
+    - 'db/migrate/*_devise_create_admins.rb'
+    - 'db/migrate/*active_storage.rb'
+    - 'bin/bundle'
+
+Rails:
+  Enabled: true
+
+Rails/FilePath:
+  Exclude:
+    - 'config/environments/development.rb'
+
+
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+Metrics/AbcSize:
+  Max: 18
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/environments/*.rb'
+    - 'spec/**/*.rb'
+    - 'config/routes.rb'
+
+Metrics/ClassLength:
+  Exclude:
+
+Metrics/MethodLength:
+  Exclude:
+
+Metrics/PerceivedComplexity:
+  Exclude:
+
+Metrics/CyclomaticComplexity:
+  Exclude:
+
+Metrics/LineLength:
+  Max: 150
+  AllowHeredoc: true
+  AllowURI: true
+  URISchemes:
+    - http
+    - https
+  Exclude:
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/MixinUsage:
+  Exclude:
+    - 'bin/*'
+
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - development
+    - test
+    - staging

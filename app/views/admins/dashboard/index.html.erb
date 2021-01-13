@@ -1,0 +1,62 @@
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Sample Page</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><%= link_to 'Home', admin_root_url %></li>
+              <li class="breadcrumb-item active">Sample Page</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="card card-info">
+              <div class="card-body">
+                <h5 class="card-title">AdminLte3を使った管理画面及びvueのサンプル</h5>
+                <p class="card-text">
+                </p>
+              </div>
+            </div><!-- /.card -->
+            <div id="memo"></div>
+          </div>
+          <!-- /.col-md-6 -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="https://github.com/takahashi1985/sample-rails6-vue" class="btn btn-primary" target="blank">レポジトリを見る</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <%= button_to 'ログアウト', destroy_admin_session_path, method: :delete, class: "btn btn-warning" %>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
