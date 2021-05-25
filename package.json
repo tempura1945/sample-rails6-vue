@@ -1,4 +1,7 @@
 {
+ "scripts": {
+    "build": "webpack --mode=production",
+  },
   "name": "sample-rails",
   "private": true,
   "dependencies": {
