@@ -3,9 +3,6 @@
     "node": "14.15.3",
     "yarn": "1.22.10"
   },
- "scripts": {
-    "build": "webpack --mode=production"
-  },
   "name": "sample-rails",
   "private": true,
   "dependencies": {
