@@ -8,10 +8,9 @@
 # this file is here to facilitate running it.
 #
 
-ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
-load Gem.bin_path('bundler', 'bundle')
+# ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
+# load Gem.bin_path('bundler', 'bundle')
 
-=begin
 require 'rubygems'
 
 m = Module.new do
@@ -118,4 +117,3 @@ end
 m.load_bundler!
 
 load Gem.bin_path('bundler', 'bundle') if m.invoked_as_script?
-=end
