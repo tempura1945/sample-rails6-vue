@@ -14,5 +14,7 @@
  *= require_self
  */
 
+/*
 @import 'admin-lte/plugins/fontawesome-free/css/all.min';
+*/
 @import 'admin-lte/dist/css/adminlte.min';
