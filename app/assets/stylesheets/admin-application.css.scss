@@ -14,9 +14,8 @@
  *= require_self
  */
 
-// $fa-font-path: '@fortawesome/fontawesome-free/webfonts'; 
-@import '@fortawesome/fontawesome-free/scss/fontawesome';
-@import '@fortawesome/fontawesome-free/scss/solid';
-@import 'admin-lte/plugins/fontawesome-free/css/all.min';
-@import '@fortawesome/fontawesome-free/css/all.css';
-@import 'admin-lte/dist/css/adminlte.min';
+
+ @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&lang=en");
+
+ @import "bootstrap/scss/bootstrap";
+ @import "admin-lte/dist/css/adminlte";

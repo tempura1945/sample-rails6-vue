@@ -9,9 +9,15 @@ environment.plugins.prepend('VueLoaderPlugin', new VueLoaderPlugin())
 environment.loaders.prepend('vue', vue)
 
 const webpack = require('webpack')
-environment.plugins.prepend('Provide',
+environment.plugins.prepend(
+  "Provide",
   new webpack.ProvidePlugin({
-    $: 'admin-lte/plugins/jquery/jquery',
-    jQuery: 'admin-lte/plugins/jquery/jquery',
+    $: "jquery",
+    jQuery: "jquery",
+    jquery: "jquery",
+    "window.Tether": "tether",
+    Popper: ["popper.js", "default"] // for Bootstrap 4
   })
-)
+);
+
+module.exports = environment;
