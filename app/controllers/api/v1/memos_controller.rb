@@ -11,6 +11,15 @@ module Api
         render json: @memos
       end
 
+    # 以下を追加
+    def index2
+      if params[:name].present?
+        @users = User.where('name LIKE ?', "%#{params[:name]}%")
+      else
+        @users = User.all
+      end
+    end      
+
       def show
         render json: @memo
       end
