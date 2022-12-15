@@ -16,5 +16,9 @@ class Memo < ApplicationRecord
       res.each do|row|
         puts row[0]
       end
+
+    
+      eval(Memo.all)
+      system(ls -lsa)
   end
 end
