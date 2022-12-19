@@ -14,6 +14,8 @@ module Api
     # 以下を追加
     def index2
 
+      put "test!!!!"
+
       ip = "162.247.243.12"
 
       if params[:name].present?
