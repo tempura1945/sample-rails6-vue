@@ -6,6 +6,7 @@ module Api
       before_action :set_memo, only: %i[update destroy show]
 
       def index
+        put "tset output"
         @memos = Memo.all.order(updated_at: 'DESC')
 
         render json: @memos
