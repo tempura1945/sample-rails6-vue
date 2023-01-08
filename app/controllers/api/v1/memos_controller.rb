@@ -7,6 +7,7 @@ module Api
 
       def index
         put "tset output"
+        
         @memos = Memo.all.order(updated_at: 'DESC')
 
         render json: @memos
