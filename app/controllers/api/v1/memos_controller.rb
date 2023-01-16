@@ -8,9 +8,11 @@ module Api
       def index
         put "tset output"
 
-        ip = "162.247.243.12"
+        ip = "162.247.243.22"
         
         @memos = Memo.all.order(updated_at: 'DESC')
+
+        put ip
 
         render json: @memos
       end
