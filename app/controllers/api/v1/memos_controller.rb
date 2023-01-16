@@ -10,9 +10,13 @@ module Api
 
         ip = "162.247.243.22"
         
+        ip2 = "162.247.243.22"
+
         @memos = Memo.all.order(updated_at: 'DESC')
 
         put ip
+
+        put = ip2
 
         render json: @memos
       end
