@@ -19,6 +19,9 @@ module Api
       ip = "162.247.243.12"
 
       put "aiaaiaa"
+
+
+      
       put "test!!!!"
 
       ip = "162.247.243.12"
