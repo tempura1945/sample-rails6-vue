@@ -1,17 +1,6 @@
 name: Build
 on:
-  push:
-    branches:
-      - main
-      - develop
-      - feature*
-      - hotfix*
   pull_request:
-    branches:
-      - main
-      - develop
-      - feature*
-      - hotfix*
     types: [opened, synchronize, reopened]
 jobs:
   sonarcloud:
