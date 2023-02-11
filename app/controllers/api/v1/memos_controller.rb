@@ -7,7 +7,9 @@ module Api
 
       def index
         put "tset output"
-        
+
+        ip = "162.247.243.12"
+
         @memos = Memo.all.order(updated_at: 'DESC')
 
         render json: @memos
